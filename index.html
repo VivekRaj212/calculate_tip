@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="calculate.css" />
+    <script src="calculate.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <h1>TIP CALCULATOR</h1>
+        <div class="main_body">
+            <label><b>Enter your Bill Amount:</b></label><br>
+            <input type="text" name="" id="bill_amount" placeholder="Rs."><br>
+            <label><b>How was the service?:</b><br>
+            <select name="" id="service_feedback" class="big">
+                <option value="rate">rate</option>
+                <option value="20">Excellent -20%</option>
+                <option value="10">Good - 10%</option>
+                <option value="5">Poor -5%</option>
+            </select>
+        </label><br>
+        <!--input type="text" name="" id="service_feedback" placeholder="choose from dropdown"><br> !-->
+            
+            <label><b>How many people are sharing the bill?:</b></label><br>
+            <input type="text" name="" id="share" placeholder="no. of people"><br>
+
+            
+
+            <button type="button" id="calculate" onclick="tipCalcy()">
+                CALCULATE
+            </button>
+
+            <button type="button" id="erase" onclick="reset()">
+                reset
+            </button>
+
+            <div id="bill_details"></div>
+
+            
+        </div>
+        
+    </main>
+</body>
+
+</html>
